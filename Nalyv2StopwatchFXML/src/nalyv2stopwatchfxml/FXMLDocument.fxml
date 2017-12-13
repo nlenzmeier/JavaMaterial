@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="309.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nalyv2stopwatchfxml.FXMLDocumentController">
+    <children>
+      <Button layoutX="344.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleStartButtonAction" prefHeight="27.0" prefWidth="69.0" text="Start" />
+      <Button layoutX="344.0" layoutY="257.0" mnemonicParsing="false" onAction="#resetStopwatch" prefHeight="27.0" prefWidth="69.0" text="Reset" />
+      <Button layoutX="344.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleStopButtonAction" prefHeight="27.0" prefWidth="69.0" text="Stop" />
+        <Label fx:id="label" layoutX="321.0" layoutY="30.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="115.0" text="Digital Display" />
+      <ImageView fitHeight="260.0" fitWidth="259.0" layoutX="14.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clockface.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hand" fitHeight="265.0" fitWidth="252.0" layoutX="18.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hand.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="digital" layoutX="344.0" layoutY="90.0" text="Label" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nalyv2checkers.BoardController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Grid">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handle16" text="16x16" />
+                  <MenuItem mnemonicParsing="false" onAction="#handle10" text="10x10" />
+                  <MenuItem mnemonicParsing="false" onAction="#handle8" text="8x8" />
+                  <MenuItem mnemonicParsing="false" onAction="#handle3" text="3x3" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Color">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleColor" text="Blue" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleOriginal" text="Default" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

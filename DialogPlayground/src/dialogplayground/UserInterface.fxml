@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dialogplayground.UserInterfaceController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleAboutFull" text="About (full)" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@userinterface.css" />
+          </stylesheets>
+         <children>
+            <Button layoutX="43.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleWarning" text="Warning" />
+            <Button layoutX="62.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleError" text="Error" />
+            <Button layoutX="32.0" layoutY="103.0" mnemonicParsing="false" onAction="#handleException" text="Exception" />
+            <Button layoutX="14.0" layoutY="141.0" mnemonicParsing="false" onAction="#handleConfirmation" text="Confirmation" />
+            <TextField fx:id="confirmationResultTextField" layoutX="125.0" layoutY="141.0" prefHeight="26.0" prefWidth="391.0" />
+            <Button layoutX="32.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleTextInput" text="Text Input" />
+            <TextField fx:id="textInputResultTextField" layoutX="126.0" layoutY="179.0" prefHeight="26.0" prefWidth="391.0" />
+            <Text layoutX="25.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Based on http://code.makery.ch/blog/javafx-dialogs-official/" />
+            <Button layoutX="50.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleChoice" text="Choice" />
+            <TextField fx:id="choiceResultTextField" layoutX="126.0" layoutY="217.0" prefHeight="26.0" prefWidth="391.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

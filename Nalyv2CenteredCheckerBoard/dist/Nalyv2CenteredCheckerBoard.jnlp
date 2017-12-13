@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Nalyv2CenteredCheckerBoard.jnlp">
+  <information>
+    <title>Nalyv2CenteredCheckerBoard</title>
+    <vendor>Nicolle</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Nalyv2CenteredCheckerBoard.jar" size="6682" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Nalyv2CenteredCheckerBoard" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="nalyv2centeredcheckerboard.Nalyv2CenteredCheckerBoard"  name="Nalyv2CenteredCheckerBoard" />
+  <update check="always"/>
+</jnlp>
